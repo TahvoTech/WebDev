@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cruises.html">Cruises</a>
+            <a href="reservation.html">Book a Cruise</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Welcome to Best Cruises - Book A Cruise<sup>™</sup></h1>
+    </header>
+    <main>
+        <form>
+            <label for="from-selection">From:</label><br><br>
+            <select id="from-selection" name="from-selection">
+                <option value="Helsinki" id="from-helsinki">Helsinki</option>
+                <option value="Turku" id="from-turku">Turku</option>
+                <option value="Vaasa" id="from-vaasa">Vaasa</option>
+                <option value="Tallinna" id="from-tallinna">Tallinna</option>
+            </select><br><br>
+
+            <label for="to-selection">To:</label><br><br>
+            <select id="to-selection" name="to-selection">
+                <option value="Helsinki" id="to-helsinki">Helsinki</option>
+                <option value="Turku" id="to-turku">Turku</option>
+                <option value="Vaasa" id="to-vaasa">Vaasa</option>
+                <option value="Tallinna" id="to-tallinna">Tallinna</option>
+            </select><br><br>
+
+            <label for="customer-name">Name:</label><br><br>
+            <input type="text" id="customer-name" name="customer-name" required><br><br>
+
+            <label for="customer-email">Email:</label><br><br>
+            <input type="email" id="customer-email" name="customer-email" required><br><br>
+
+            <label for="number-of-adults">Number of adults:</label><br><br>
+            <input type="number" id="number-of-adults" name="number-of-adults" min="1" max="99" required><br><br>
+
+            <label for="number-of-children"> Number of children:</label><br><br>
+            <input type="number" id="number-of-children" name="number-of-children" min="0" max="99" required><br><br>
+
+            <label for="departure-date">Departure date:</label><br><br>
+            <input type="date" id="departure-date" name="departure-date" required><br><br>
+
+            <label for="vehicle">Travelling with a vehicle:</label><br><br>
+            <input type="checkbox" id="vehicle" name="vehicle"><br><br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>

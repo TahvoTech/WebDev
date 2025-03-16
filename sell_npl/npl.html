@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="npl.html">Non-Performing Loans</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Welcome to NPL Sales - Sell Your Non-Performing Loans<sup>™</sup></h1>
+    </header>
+    <main>
+        <form>
+            <label for="loan-amount">Loan Amount:</label><br><br>
+            <input type="number" id="loan-amount" name="loan-amount" required><br><br>
+
+            <label for="loan-type">Loan Type:</label><br><br>
+            <select id="loan-type" name="loan-type">
+                <option value="personal" id="loan-personal">Personal</option>
+                <option value="mortgage" id="loan-mortgage">Mortgage</option>
+                <option value="auto" id="loan-auto">Auto</option>
+                <option value="business" id="loan-business">Business</option>
+            </select><br><br>
+
+            <label for="borrower-name">Borrower Name:</label><br><br>
+            <input type="text" id="borrower-name" name="borrower-name" required><br><br>
+
+            <label for="borrower-email">Borrower Email:</label><br><br>
+            <input type="email" id="borrower-email" name="borrower-email" required><br><br>
+
+            <label for="borrower-phone">Borrower Phone:</label><br><br>
+            <input type="tel" id="borrower-phone" name="borrower-phone" required><br><br>
+
+            <label for="loan-date">Loan Date:</label><br><br>
+            <input type="date" id="loan-date" name="loan-date" required><br><br>
+
+            <label for="loan-status">Loan Status:</label><br><br>
+            <select id="loan-status" name="loan-status">
+                <option value="current" id="status-current">Current</option>
+                <option value="delinquent" id="status-delinquent">Delinquent</option>
+                <option value="defaulted" id="status-defaulted">Defaulted</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>
