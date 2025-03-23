@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+}
+
+.swot {
+    border: 1px solid blue;
+    margin: 0;
+    width: 50vw;
+    height: 50vh;
+    
+}
